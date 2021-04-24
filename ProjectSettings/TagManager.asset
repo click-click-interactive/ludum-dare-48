@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shovel
+  - Pelle
   layers:
   - Default
   - TransparentFX
