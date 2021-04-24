@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class TillemapController : MonoBehaviour
+public class GroundController : MonoBehaviour
 {
 
     public GameObject tileMapGameObject;
