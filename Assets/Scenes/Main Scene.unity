@@ -425,13 +425,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Digger
       objectReference: {fileID: 0}
-    - target: {fileID: 7006258356651200697, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
-      propertyPath: m_Name
-      value: Shovel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7006258356651200697, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
-      propertyPath: m_TagString
-      value: Shovel
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
