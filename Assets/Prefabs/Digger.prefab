@@ -648,8 +648,8 @@ GameObject:
   - component: {fileID: 1820821689}
   - component: {fileID: 1820821690}
   m_Layer: 6
-  m_Name: Mouth
-  m_TagString: Player
+  m_Name: Shovel
+  m_TagString: Shovel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
