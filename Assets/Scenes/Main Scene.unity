@@ -123,27 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &105731200 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6681558878504258692, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
-  m_PrefabInstance: {fileID: 2650353822227835379}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &105731201
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105731200}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.00000047683716, y: -0.70000005}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
 --- !u!1 &360691588
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464077589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.984, y: -2.691, z: -20.829172}
+  m_LocalPosition: {x: -0.984, y: -2.691, z: 0}
   m_LocalScale: {x: 19.92, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -398,10 +377,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 882460800061465283, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1120319087169633749, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -412,7 +387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1120319087169633749, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.085
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 1120319087169633749, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
       propertyPath: m_LocalPosition.z
@@ -446,18 +421,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1269690011669842364, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6035429052604406298, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
       propertyPath: m_Name
       value: Digger
       objectReference: {fileID: 0}
-    - target: {fileID: 6749169931943907924, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6749169931943907924, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52acb6f83d4ac54aa66484c4604eb60, type: 3}
