@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private GameObject triggerInstance;
     private GameObject triggerEnemy;
     private CallableAction actionTarget;
+    private Animator animator;
 
     private Renderer renderer;
     public Color damageColor;
@@ -24,21 +25,36 @@ public class PlayerController : MonoBehaviour
     {
         renderer = this.gameObject.GetComponent<SpriteRenderer>();
         originalColor = renderer.material.color;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        bool moved = false;
+
         if (Input.GetKey(KeyCode.Z)) {
             transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up, speed * Time.deltaTime);
+            moved = true;
+            animator.SetInteger("direction", (int) PlayerDirection.Up);
         } else if (Input.GetKey(KeyCode.S)) {
             transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.down, speed * Time.deltaTime);
+            moved = true;
+            animator.SetInteger("direction", (int) PlayerDirection.Down);
         }
 
         if (Input.GetKey(KeyCode.Q)) {
             transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.left, speed * Time.deltaTime);
+            moved = true;
+            animator.SetInteger("direction", (int) PlayerDirection.Left);
         } else if (Input.GetKey(KeyCode.D)) {
             transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right, speed * Time.deltaTime);
+            moved = true;
+            animator.SetInteger("direction", (int) PlayerDirection.Right);
+        }
+
+        if (!moved) {
+            animator.SetInteger("direction", (int) PlayerDirection.None);
         }
 
         if (actionTarget != null && Input.GetKeyDown(KeyCode.F) && triggerInstance != null)
@@ -56,7 +72,7 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
 
         ActionTrigger actionTrigger = other.GetComponent<ActionTrigger>();
-        if (actionTrigger) {
+        if (actionTrigger && actionTrigger.action) {
             this.actionTarget = actionTrigger.action;
             this.triggerInstance = other.gameObject;
             hintPrefab.GetComponentInChildren<TMP_Text>().text = this.actionTarget.getType();
