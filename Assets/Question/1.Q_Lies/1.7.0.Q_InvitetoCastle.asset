@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11508b07eb0cdff4a8900f5f203aea7a, type: 3}
+  m_Name: 1.7.0.Q_InvitetoCastle
+  m_EditorClassIdentifier: 
+  choices:
+  - choiceText: Sure !
+    conversation: {fileID: 11400000, guid: d2298d8f434cccf40859c19ece84192a, type: 2}
+  - choiceText: No.
+    conversation: {fileID: 11400000, guid: 05a8f16068a0320499bdf49405311654, type: 2}
+  - choiceText: I don't know...
+    conversation: {fileID: 11400000, guid: 05a8f16068a0320499bdf49405311654, type: 2}

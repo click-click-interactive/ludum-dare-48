@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
+  m_Name: 3.0_InnerArrive
+  m_EditorClassIdentifier: 
+  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "You arrive at the 2nd key\u2019s location and the party sets up camp at
+      the outskirts of the enemies vision, and begins talking strategy. "
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: 'You excuse yourself, feigning a need to think, but when you want to exit
+      the camp, they all stop you, citing danger all around, again. '
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "You reluctantly accept to stay, but isolate yourself. After some time,
+      you get called over.\r"
+  question: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: c6a8efd754aaca74580248e27cf8f89e, type: 2}

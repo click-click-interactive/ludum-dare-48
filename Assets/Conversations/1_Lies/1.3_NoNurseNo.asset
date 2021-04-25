@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
+  m_Name: 1.3_NoNurseNo
+  m_EditorClassIdentifier: 
+  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+  speakerRight: {fileID: 0}
+  lines:
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: "I\u2019m alright, thanks"
+  - character: {fileID: 11400000, guid: a06f9faf8bb607647b0c2012c60b5a13, type: 2}
+    text: Alright ? You just killed a demonic hound, surely you must be hurt, let
+      me inspect you.
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: There is no need, I assure you !
+  - character: {fileID: 11400000, guid: a06f9faf8bb607647b0c2012c60b5a13, type: 2}
+    text: "Now let me do my job hero, you\u2019ve done yours !"
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: Get off of me !
+  question: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: 16c8564126c7d914c932b8b2f3bd397d, type: 2}

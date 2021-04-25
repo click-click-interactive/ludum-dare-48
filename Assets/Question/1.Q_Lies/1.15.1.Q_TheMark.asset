@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11508b07eb0cdff4a8900f5f203aea7a, type: 3}
+  m_Name: 1.15.1.Q_TheMark
+  m_EditorClassIdentifier: 
+  choices:
+  - choiceText: Because it still burns... +Courage
+    conversation: {fileID: 11400000, guid: 1281750a072b95343882184fae7e6346, type: 2}
+  - choiceText: It wouldn't be appropriate. +Chivalry
+    conversation: {fileID: 11400000, guid: 8f31fe7aeb571f4468dc0ea8b6caee62, type: 2}
+  - choiceText: It could be dangerous ! +Admiration
+    conversation: {fileID: 11400000, guid: 3a09f546f066e3241bec53e31a6c8f49, type: 2}

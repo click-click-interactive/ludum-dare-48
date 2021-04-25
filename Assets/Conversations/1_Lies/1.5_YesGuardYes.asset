@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
+  m_Name: 1.5_YesGuardYes
+  m_EditorClassIdentifier: 
+  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+  speakerRight: {fileID: 11400000, guid: 4c3f43b00f2e09746b8d970355aa7a29, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 4c3f43b00f2e09746b8d970355aa7a29, type: 2}
+    text: Oh great hero ! Forgive her manners, she is only trying to tend to your
+      wounds, please let her assist you.
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: I have no wounds, leave me be, I must return to my quest !
+  - character: {fileID: 11400000, guid: 4c3f43b00f2e09746b8d970355aa7a29, type: 2}
+    text: "No wounds !? But how is that possible ? No\u2026 Could it be ?"
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: "What\u2019s going on ?"
+  - character: {fileID: 11400000, guid: 4c3f43b00f2e09746b8d970355aa7a29, type: 2}
+    text: THE PROPHECY IS TRUE ! HE IS THE MIGHTY SLAYER, HE FOUGHT THE BEAST AND
+      RECOVERED IMMEDIATELY FROM HIS BATTLE !
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: Uuuuuh..
+  - character: {fileID: 11400000, guid: 4c3f43b00f2e09746b8d970355aa7a29, type: 2}
+    text: HE IS THE HERO, THE DEMON ENDER, THE KINGMAKER !
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: Wait- I-
+  question: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: 11a87b5fcebedd548a4fa486fb1f6236, type: 2}
