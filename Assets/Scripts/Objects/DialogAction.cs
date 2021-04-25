@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "Actions/Dialog Action", order = 1)]
+[CreateAssetMenu(fileName = "Dialog Action", menuName = "Actions/Dialog Action", order = 1)]
 public class DialogAction : Action
 {
     public ActionType type = ActionType.Talk;

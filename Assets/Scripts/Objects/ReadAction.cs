@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "Actions/Read Action", order = 1)]
+[CreateAssetMenu(fileName = "Read Action", menuName = "Actions/Read Action", order = 1)]
 public class ReadAction : Action
 {
     public ActionType type = ActionType.Read;
