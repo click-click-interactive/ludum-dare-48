@@ -39,6 +39,6 @@ public class QuestionController : MonoBehaviour
             ChoiceController c = ChoiceController.AddChoiceButton(choiceButton, question.choices[i], i);
             choiceControllers.Add(c);
         }
-        
+        gameObject.SetActive(true);
     }
 }

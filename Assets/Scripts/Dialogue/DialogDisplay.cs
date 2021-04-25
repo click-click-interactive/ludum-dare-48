@@ -21,6 +21,12 @@ public class DialogDisplay : MonoBehaviour
 
     private int activeLineIndex = 0;
 
+    public void LaunchConversation(Conversation convo)
+    {
+        this.conversation = convo;
+        advanceLine();
+    }
+
     public void ChangeConversation(Conversation nextConversation)
     {
         conversationStarted = false;
