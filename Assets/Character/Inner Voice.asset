@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Inner Voice
   m_EditorClassIdentifier: 
   fullName: ' Inner Voice'
-  portrait: {fileID: 0}
+  portrait: {fileID: 1598263312506885978, guid: b6df9eb1ff1b8fd49a031d9ab10869e2, type: 3}

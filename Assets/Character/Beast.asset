@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Beast
   m_EditorClassIdentifier: 
   fullName: B E A S T
-  portrait: {fileID: 7092368306290126026, guid: cd48b80161a52e14cb922b1cdbd5f641, type: 3}
+  portrait: {fileID: 21300000, guid: 250fff412341ca94b8811aba7a2f7132, type: 3}

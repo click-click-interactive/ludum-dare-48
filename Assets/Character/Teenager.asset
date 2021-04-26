@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Teenager
   m_EditorClassIdentifier: 
   fullName: Teenager
-  portrait: {fileID: -8383239846016255493, guid: cd48b80161a52e14cb922b1cdbd5f641, type: 3}
+  portrait: {fileID: 21300000, guid: c5bcb4b5c5a8a464cad06e1382722c8a, type: 3}

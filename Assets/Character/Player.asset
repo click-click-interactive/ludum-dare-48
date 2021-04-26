@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   fullName: Player
-  portrait: {fileID: 21300000, guid: 5a21a24dcd2739a4b98957c0bc5dda71, type: 3}
+  portrait: {fileID: 21300000, guid: 392f1c3495e8df347b42a62c0a30f6eb, type: 3}

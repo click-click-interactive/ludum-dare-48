@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DemonKing
   m_EditorClassIdentifier: 
   fullName: Demon King
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: df551dd7b72cb9d47962105116bb7dbb, type: 3}

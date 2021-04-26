@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: King
   m_EditorClassIdentifier: 
   fullName: King Zebi the first
-  portrait: {fileID: -8505555871591304067, guid: cd48b80161a52e14cb922b1cdbd5f641, type: 3}
+  portrait: {fileID: 21300000, guid: 78ff8ac8125233a4ca17fc864c7ae29e, type: 3}
