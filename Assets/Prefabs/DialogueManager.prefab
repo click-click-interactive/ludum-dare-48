@@ -74,6 +74,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1402036534705620709}
     m_Modifications:
+    - target: {fileID: 210690232, guid: a7d76edf78d457e4e81b88c617eab63e, type: 3}
+      propertyPath: m_lineSpacing
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 646099003, guid: a7d76edf78d457e4e81b88c617eab63e, type: 3}
       propertyPath: conversationChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
