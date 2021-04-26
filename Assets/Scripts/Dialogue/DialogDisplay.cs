@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.Playables;
 
 [System.Serializable]
 public class QuestionEvent : UnityEvent<Question> { }
@@ -20,11 +21,16 @@ public class DialogDisplay : MonoBehaviour
     private string startedConversationName = "";
 
     private int activeLineIndex = 0;
+    public BoolVariable isPlayingDialog;
+    private PlayableDirector playableDirector;
 
     public void LaunchConversation(Conversation convo)
     {
         //Debug.Log("launch convo : " + convo.name);
         //playerCanControl.RuntimeValue = false;
+        if (playableDirector) {
+            playableDirector.Pause();
+        }
         this.conversation = convo;
         this.startedConversationName = convo.name;
         advanceLine();
@@ -78,6 +84,10 @@ public class DialogDisplay : MonoBehaviour
 
     void endConversation()
     {
+        if (playableDirector) {
+            playableDirector.Resume();
+        }
+        isPlayingDialog.RuntimeValue = false;
         conversation = null;
         conversationStarted = false;
         speakerUI.Hide();
@@ -86,6 +96,7 @@ public class DialogDisplay : MonoBehaviour
 
     void initialize()
     {
+        isPlayingDialog.RuntimeValue = true;
         conversationStarted = true;
         activeLineIndex = 0;
         speakerUI.Show();
@@ -130,8 +141,14 @@ public class DialogDisplay : MonoBehaviour
 
     void SetDialogContent(SpeakerUI showSpeaker, Line line)
     {
+        Debug.Log("Line" + showSpeaker);
         showSpeaker.Dialog = line.text;
         showSpeaker.fullName.text = line.character.fullName;
         showSpeaker.portrait.sprite = line.character.portrait;
+    }
+
+    public void SetPlayableDirector(PlayableDirector playableDirector)
+    {
+        this.playableDirector = playableDirector;
     }
 }

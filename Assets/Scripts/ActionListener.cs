@@ -7,7 +7,7 @@ public class ActionListener : MonoBehaviour
 {
     public GameObject hintPrefab;
     public Canvas canvas;
-    public GameObject forwardTo;
+    public BoolVariable isPlayingDialog;
     private GameObject hintInstance;
     private CallableAction actionTarget;
     private GameObject triggerInstance;
@@ -20,6 +20,13 @@ public class ActionListener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isPlayingDialog.RuntimeValue) {
+            GetComponent<Collider2D>().enabled = false;
+            if (hintInstance) Destroy(hintInstance);
+        } else {
+            GetComponent<Collider2D>().enabled = true;
+        }
+
       if (actionTarget != null && Input.GetKeyDown(KeyCode.F) && triggerInstance != null)
       {
           Destroy(hintInstance);
@@ -29,7 +36,6 @@ public class ActionListener : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-
       ActionTrigger actionTrigger = other.GetComponent<ActionTrigger>();
       if (actionTrigger && actionTrigger.action) {
           this.actionTarget = actionTrigger.action;

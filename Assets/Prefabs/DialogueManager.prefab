@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1402036534705620709}
   - component: {fileID: 1402036534705620708}
+  - component: {fileID: 960782697}
+  - component: {fileID: 960782698}
   m_Layer: 5
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -49,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e799b6b9e2af92c459a65bf268ade282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 11400000, guid: 46338d81e5dce7f4dbb493b6b4e22ac4, type: 2}
+  conversation: {fileID: 0}
   questionEvent:
     m_PersistentCalls:
       m_Calls:
@@ -66,8 +68,71 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   speaker: {fileID: 3635780410737381158}
-  playerCanControl: {fileID: 11400000, guid: 53831a1da42402b439719ef75fb9a55b, type: 2}
   gameManager: {fileID: 0}
+  conversationStarted: 0
+  isPlayingDialog: {fileID: 11400000, guid: 09b0fe97cd9338b409374c640c4b3c0a, type: 2}
+--- !u!95 &960782697
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402036534705620706}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &960782698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402036534705620706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 28e881f4671234b428245cc917cb9fb7, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1402036534705620708}
+          m_TargetAssemblyTypeName: DialogDisplay, Assembly-CSharp
+          m_MethodName: SetPlayableDirector
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Playables.PlayableDirector,
+              UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1402036534705620708}
+          m_TargetAssemblyTypeName: DialogDisplay, Assembly-CSharp
+          m_MethodName: LaunchConversation
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 70ecfdea45577e54f8998e13196e5537, type: 2}
+            m_ObjectArgumentAssemblyTypeName: Conversation, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1735489444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -161,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4381053792198503516, guid: a7d76edf78d457e4e81b88c617eab63e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4381053792198503516, guid: a7d76edf78d457e4e81b88c617eab63e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -94,4 +94,9 @@ public class PlayerController : MonoBehaviour
     {
         renderer.material.color = originalColor;
     }
+
+    public void SetControleable(bool value)
+    {
+        canControl.RuntimeValue = value;
+    }
 }

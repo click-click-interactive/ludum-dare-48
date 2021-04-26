@@ -1241,7 +1241,7 @@ MonoBehaviour:
   portrait: {fileID: 202969147}
   fullName: {fileID: 99863039}
   dialog: {fileID: 210690232}
-  choice: {fileID: 0}
+  choice: {fileID: 897511933}
   hint: {fileID: 7960971141559808069}
 --- !u!1 &3766530427848299725
 GameObject:
