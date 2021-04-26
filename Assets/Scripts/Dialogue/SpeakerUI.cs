@@ -10,6 +10,7 @@ public class SpeakerUI : MonoBehaviour
     public TextMeshProUGUI fullName;
     public TextMeshProUGUI dialog;
     public TextMeshProUGUI choice = null;
+    public GameObject hint;
 
     private Character speaker;
     
@@ -19,6 +20,7 @@ public class SpeakerUI : MonoBehaviour
         set
         {
             speaker = value;
+            Debug.Log(speaker);
             portrait.sprite = speaker.portrait;
             fullName.text = speaker.fullName;
         }

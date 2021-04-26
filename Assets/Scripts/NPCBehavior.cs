@@ -21,8 +21,9 @@ public class NPCBehavior : MonoBehaviour
 
     public void StartConversation()
     {
-        
-        dialogueManager.GetComponent<DialogDisplay>().LaunchConversation(conversations[conversationIndex]);
-        conversationIndex++;
+        if (conversationIndex < conversations.Count) {
+            dialogueManager.GetComponent<DialogDisplay>().LaunchConversation(conversations[conversationIndex]);
+            conversationIndex++;
+        }
     }
 }
