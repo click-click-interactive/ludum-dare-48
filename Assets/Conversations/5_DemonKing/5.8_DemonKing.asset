@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 5.8_DemonKing
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
-  speakerRight: {fileID: 11400000, guid: 5e10e8a3cccd1124d85a93246b4fad03, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 5e10e8a3cccd1124d85a93246b4fad03, type: 2}
     text: "So you\u2019re the mighty hero they- wait, who are you ? How did you get
@@ -23,11 +21,11 @@ MonoBehaviour:
       have to kill me, I\u2019m just a pissy bandit that steals from children, just
       let me out !"
   - character: {fileID: 11400000, guid: 5e10e8a3cccd1124d85a93246b4fad03, type: 2}
-    text: AHAHAHAHAHA ! HAHAHAHAHAHA ! AHAHAHAHAHA !
+    text: HAHAHAHA ! HAHAHAHAHAHA ! AHAHAHAHAHA !
   - character: {fileID: 11400000, guid: 5e10e8a3cccd1124d85a93246b4fad03, type: 2}
-    text: AHAHAHAHAHA ! HAHAHAHAHAHA ! AHAHAHAHAHA !
+    text: AHAHAHAHAHA ! HAHAHAHA ! AHAHAHAHAHA !
   - character: {fileID: 11400000, guid: 5e10e8a3cccd1124d85a93246b4fad03, type: 2}
-    text: AHAHAHAHAHA ! HAHAHAHAHAHA ! AHAHAHAHAHA !
+    text: AHAHAHAHAHA ! HAHAHAHAHAHA ! AHAHAHA !
   - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
     text: "C\u2019mon man\u2026"
   - character: {fileID: 11400000, guid: 5e10e8a3cccd1124d85a93246b4fad03, type: 2}

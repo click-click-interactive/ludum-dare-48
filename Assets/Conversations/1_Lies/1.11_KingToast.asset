@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 1.11_KingToast
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
-  speakerRight: {fileID: 11400000, guid: 916ad013519f6b941bc83685b0ed2d24, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 916ad013519f6b941bc83685b0ed2d24, type: 2}
     text: We are all gathered here tonight to celebrate our hero and his quest to
@@ -29,13 +27,13 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 916ad013519f6b941bc83685b0ed2d24, type: 2}
     text: Then you know the prophecy !
   - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
-    text: "Sure, sure, but\u2026 just to be sure\u2026 for everyone around, can you
-      tell it again ?"
+    text: "Sure, sure, but\u2026 just to be certain\u2026 for everyone around, can
+      you tell it again ?"
   - character: {fileID: 11400000, guid: 916ad013519f6b941bc83685b0ed2d24, type: 2}
     text: "What a wonderful idea ! The prophecy states that he who receives the mark
       of the Demon King, the greatest hero of our time, must find the 3 Hell Gates\u2019
       Keys, and enter hell to kill the Undying Demon King."
   - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
-    text: Oh, yeah, alright, yeah, uhhuh, hmmm, ok.
+    text: Oh... yeah... alright... yeah... uhhuh.... hmmm.... ok.
   question: {fileID: 0}
   nextConversation: {fileID: 11400000, guid: 56fb8639a45efda4ba961bc3ec1b907c, type: 2}

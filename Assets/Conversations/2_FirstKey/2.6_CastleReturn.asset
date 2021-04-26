@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 2.6_CastleReturn
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
+  lines:
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "Back at the castle, you tell the tales of your combat, much to the court\u2019s
+      amusement. "
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "You embellish, of course, because the truth wouldn\u2019t look so good. "
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "And this life, it suits you, you just need to find a way to ditch those
+      annoying companions of yours\u2026"
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: " Maybe on the next trip. You take rest, for just a night, before embarking
+      on your next journey.\r"
   question: {fileID: 0}
   nextConversation: {fileID: 11400000, guid: 5b32c788e852dcf419d5cff6b57b0fb6, type: 2}
