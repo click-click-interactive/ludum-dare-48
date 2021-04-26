@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 5.0_InnerTravel
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
-  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: 'On the way to the gates, the reality of everything happening begins to
@@ -30,4 +28,4 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: You realize just how deep in your lie you have gotten yourself..
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: 3191c002833c03a40af9bdcae71d8a5f, type: 2}
+  nextConversation: {fileID: 11400000, guid: ff03e5549bb30184a8a13074cfc6b99f, type: 2}

@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 4.5.8_SusMarkMark
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
-  speakerRight: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
-    text: Show us the mark or I kill you here you stand.
+    text: Hey ! Show us the mark now
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: What ?
+  - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+    text: Somethings not right, show us your mark !
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: No no no, that's not happening
+  - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+    text: Show us your mark or I'll kill you where you stand
   question: {fileID: 0}
   nextConversation: {fileID: 11400000, guid: 885cc578678e2d945bb5e9458eab4da7, type: 2}
