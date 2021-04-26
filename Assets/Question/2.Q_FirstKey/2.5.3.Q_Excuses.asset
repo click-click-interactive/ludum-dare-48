@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   choices:
   - choiceText: "Nothing I can\u2019t handle. +Admiration"
-    conversation: {fileID: 0}
+    conversation: {fileID: 11400000, guid: 11b269bd5e3730c4aaf7df6163d0abeb, type: 2}
   - choiceText: '*Fake panting* +Chivalry'
-    conversation: {fileID: 0}
+    conversation: {fileID: 11400000, guid: 11b269bd5e3730c4aaf7df6163d0abeb, type: 2}
   - choiceText: Uh... We have to keep going. +Courage
-    conversation: {fileID: 0}
+    conversation: {fileID: 11400000, guid: 11b269bd5e3730c4aaf7df6163d0abeb, type: 2}

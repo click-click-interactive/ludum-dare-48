@@ -21227,7 +21227,7 @@ MonoBehaviour:
   conversationInProgress: 0
   mainCamera: {fileID: 846215625}
   canvas: {fileID: 747510381}
-  step: 1
+  step: 9
 --- !u!4 &2040536595
 Transform:
   m_ObjectHideFlags: 0
