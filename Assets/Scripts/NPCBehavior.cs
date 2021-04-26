@@ -7,6 +7,7 @@ public class NPCBehavior : MonoBehaviour
     public List<Conversation> conversations;
     private int conversationIndex = 0;
     public GameObject dialogueManager;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {

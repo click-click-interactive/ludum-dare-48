@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("GAME OVER !");
         }
         renderer.material.color = damageColor;
-        Invoke("RestoreMaterial", 0.0f);
+        Invoke("RestoreMaterial", 0.05f);
     }
 
     private void RestoreMaterial()

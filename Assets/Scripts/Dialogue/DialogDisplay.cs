@@ -13,17 +13,20 @@ public class DialogDisplay : MonoBehaviour
     public QuestionEvent questionEvent;
     public GameObject speakerLeft;
     public GameObject speakerRight;
-
+    
     private SpeakerUI speakerUILeft;
     private SpeakerUI speakerUIRight;
-
+    public GameObject gameManager;
     private bool conversationStarted = false;
+    private string startedConversationName = "";
 
     private int activeLineIndex = 0;
 
     public void LaunchConversation(Conversation convo)
     {
+        
         this.conversation = convo;
+        this.startedConversationName = convo.name;
         advanceLine();
     }
 
@@ -43,13 +46,13 @@ public class DialogDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        /*if (Input.GetKeyDown("space"))
         {
             advanceLine();
         } else if (Input.GetKeyDown("x"))
         {
             endConversation();
-        }
+        }*/
     }
 
     void advanceConversation()
@@ -68,6 +71,8 @@ public class DialogDisplay : MonoBehaviour
         } else
         {
             endConversation();
+            gameManager.GetComponent<GameManager>().SendMessage("conversationEnded", startedConversationName);
+            startedConversationName = "";
         }
     }
 
