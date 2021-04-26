@@ -22,4 +22,4 @@ MonoBehaviour:
     text: You need to compose yourself, because your party is on the way to meet
       you.
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: ef42bf9843cf133408539583ecf4f1fe, type: 2}
+  nextConversation: {fileID: 11400000, guid: b2d5b6c8d941bb44b89e8ae9a5ca1fb9, type: 2}

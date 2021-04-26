@@ -12,8 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 4.0_InnerArrive
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
+  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "You arrive at the 3rd key\u2019s location, it looks like a donjon/temple/ruin.
+      The party sets up camp at the outskirts of the enemies vision, and begins talking
+      strategy. "
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "You excuse yourself, claiming a poor night\u2019s rest, but when you want
+      to exit the camp, they all stop you, citing danger all around, again, exasperated
+      this time. "
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: You reluctantly accept to stay, but isolate yourself. After some time,
+      you get called over.
   question: {fileID: 0}
-  nextConversation: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: e6233e105ff285848a6da801d6f6ad35, type: 2}

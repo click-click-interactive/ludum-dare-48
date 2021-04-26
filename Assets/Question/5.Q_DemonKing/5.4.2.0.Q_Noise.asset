@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11508b07eb0cdff4a8900f5f203aea7a, type: 3}
+  m_Name: 5.4.2.0.Q_Noise
+  m_EditorClassIdentifier: 
+  choices:
+  - choiceText: No, something else
+    conversation: {fileID: 11400000, guid: d26ab51a4df69284f9073ae814864548, type: 2}
+  - choiceText: Wild animals, probably bears...
+    conversation: {fileID: 11400000, guid: 5b4157d694d73334c9914cb0e237a832, type: 2}
+  - choiceText: Was it you ?
+    conversation: {fileID: 11400000, guid: ca6d6f8bda2973048ac86ea5bbcaee87, type: 2}

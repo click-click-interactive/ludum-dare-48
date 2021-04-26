@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11508b07eb0cdff4a8900f5f203aea7a, type: 3}
+  m_Name: 4.5.7.Q_SusSusMark
+  m_EditorClassIdentifier: 
+  choices:
+  - choiceText: I meant something else...
+    conversation: {fileID: 11400000, guid: ff03e5549bb30184a8a13074cfc6b99f, type: 2}
+  - choiceText: HOW DARE YOU !? I AM THE HERO ! THE GREATEST !
+    conversation: {fileID: 11400000, guid: ff03e5549bb30184a8a13074cfc6b99f, type: 2}
+  - choiceText: "Uh, yeah... it\u2019s, uh... I don't know..."
+    conversation: {fileID: 11400000, guid: ff03e5549bb30184a8a13074cfc6b99f, type: 2}

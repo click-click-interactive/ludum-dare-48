@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 4.4_BattleOutro
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
+  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "You come out of the room as swiftly as you got in, not even caring anymore,
+      you\u2019re just good, doesn\u2019t matter why. "
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "You\u2019re ecstatic ! "
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: You need to compose yourself, because your party is on the way to meet
+      you.
   question: {fileID: 0}
-  nextConversation: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: c211fe638571bc044b4f24d7f2e4c4e3, type: 2}

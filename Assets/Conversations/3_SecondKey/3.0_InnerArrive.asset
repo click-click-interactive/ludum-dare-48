@@ -25,4 +25,4 @@ MonoBehaviour:
     text: "You reluctantly accept to stay, but isolate yourself. After some time,
       you get called over.\r"
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: c6a8efd754aaca74580248e27cf8f89e, type: 2}
+  nextConversation: {fileID: 11400000, guid: ad7707200eb90254b9540b15214e2dd5, type: 2}

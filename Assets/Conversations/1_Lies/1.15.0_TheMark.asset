@@ -21,5 +21,5 @@ MonoBehaviour:
     text: Huh ? The what ?
   - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
     text: The mark, show it !
-  question: {fileID: 0}
+  question: {fileID: 11400000, guid: 63ef76dd00e0f8d4c8a6609867182ae7, type: 2}
   nextConversation: {fileID: 0}

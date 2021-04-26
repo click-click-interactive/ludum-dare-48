@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 5.4.1.1_Plan
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
-  question: {fileID: 0}
+  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+  speakerRight: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+    text: Then he gets stronger and breaks free ? What is the matter with you ?
+  question: {fileID: 11400000, guid: cc2dbe0976f0c9b4788ac9e2327b107e, type: 2}
   nextConversation: {fileID: 0}

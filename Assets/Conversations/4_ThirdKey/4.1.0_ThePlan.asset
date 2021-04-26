@@ -12,8 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 4.1.0_ThePlan
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
-  question: {fileID: 0}
+  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+  speakerRight: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+    text: "Just like last time, we can\u2019t see the key anywhere from here, it\u2019s
+      probably inside. There are even more demons this time around -and they\u2019re
+      so much bigger too- and I\u2019ve seen Soul Torches everywhere here as well,
+      we need to be careful. You know what this means right ?"
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: "Yeah, yeah\u2026"
+  - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+    text: "Then it\u2019s decided, you go in by yourself, using the mark to get around
+      the soul torches, get the key, and come out. We\u2019ll hold here."
+  question: {fileID: 11400000, guid: f33cdab1bb3c2b442b64f9cb29f7e807, type: 2}
   nextConversation: {fileID: 0}

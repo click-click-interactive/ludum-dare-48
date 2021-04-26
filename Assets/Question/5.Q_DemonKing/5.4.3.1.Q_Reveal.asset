@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11508b07eb0cdff4a8900f5f203aea7a, type: 3}
+  m_Name: 5.4.3.1.Q_Reveal
+  m_EditorClassIdentifier: 
+  choices:
+  - choiceText: "No I mean I really am not a hero, he\u2019s dead."
+    conversation: {fileID: 11400000, guid: a66598a27e4056c469c26944a2cffa5b, type: 2}
+  - choiceText: "You shouldn\u2019t, I lied to all of you !"
+    conversation: {fileID: 11400000, guid: a66598a27e4056c469c26944a2cffa5b, type: 2}
+  - choiceText: I think this got bigger than I anticipated
+    conversation: {fileID: 11400000, guid: a66598a27e4056c469c26944a2cffa5b, type: 2}

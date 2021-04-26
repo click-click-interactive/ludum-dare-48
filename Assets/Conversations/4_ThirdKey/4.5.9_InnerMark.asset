@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
+  m_Name: 4.5.9_InnerMark
+  m_EditorClassIdentifier: 
+  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: 'You pull up your shirt reluctantly, not knowing what is going to happen. '
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: 'You look into his eyes as he gasps. You look down. '
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "Some kind of scar in a weird shape. That\u2019s why it was hurting for
+      so long !"
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: " HAH, YOU\u2019RE INVINCIBLE !"
+  question: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: fa81477358b07b14d891649e2262a46d, type: 2}

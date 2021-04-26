@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 5.4.1.0_Plan
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
-  question: {fileID: 0}
+  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+  speakerRight: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+    text: No we don't, we open the gates, and you kill him.
+  question: {fileID: 11400000, guid: 9a0d8f22443c4b54ba7fcd7b36c0a337, type: 2}
   nextConversation: {fileID: 0}

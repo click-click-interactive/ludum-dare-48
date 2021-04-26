@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 5.2_OpenTheGates
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
+  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+  speakerRight: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: So, uh, that demon king, how strong is he ?
+  - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+    text: Only the most powerful being ever ?
+  - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
+    text: "Oh, uh, that\u2019s nice, I guess..."
+  - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
+    text: "We\u2019re here, now to open those gates, and enter hell."
   question: {fileID: 0}
-  nextConversation: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: e4f19efbcdff8bf478642b8f67426857, type: 2}

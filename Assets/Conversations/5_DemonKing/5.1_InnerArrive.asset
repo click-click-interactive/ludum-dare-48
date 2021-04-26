@@ -12,8 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 5.1_InnerArrive
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
+  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: 'You arrive at the gates of hell, they say you are about to fight the demon
+      king. '
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "You still have no idea what is happening, but if you back down now, they
+      will surely end your life where you stand. \n"
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: 'You have to keep it up, but how will you do it with everyone watching
+      and fighting the LITERAL DEMON KING !? '
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: "For now, you need to gain some time to think of something\u2026\r"
   question: {fileID: 0}
-  nextConversation: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: c920853e4e18177428865ea6f074317e, type: 2}

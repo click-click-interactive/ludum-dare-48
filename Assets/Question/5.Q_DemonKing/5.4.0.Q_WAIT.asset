@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11508b07eb0cdff4a8900f5f203aea7a, type: 3}
+  m_Name: 5.4.0.Q_WAIT
+  m_EditorClassIdentifier: 
+  choices:
+  - choiceText: We need a plan !
+    conversation: {fileID: 11400000, guid: 1db51835629f20d40a4392a30d683ec9, type: 2}
+  - choiceText: I think I heard something !
+    conversation: {fileID: 11400000, guid: fc1e8738489ae9142bc0b79ad25cdc5e, type: 2}
+  - choiceText: I need to say something.
+    conversation: {fileID: 11400000, guid: 302b099db5fd65a4f832ce80d35bab19, type: 2}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11508b07eb0cdff4a8900f5f203aea7a, type: 3}
+  m_Name: 4.5.0.Q_Excuses
+  m_EditorClassIdentifier: 
+  choices:
+  - choiceText: I fought for hours
+    conversation: {fileID: 11400000, guid: 6e48ae908724bf948a7abbf2f3fef7cc, type: 2}
+  - choiceText: There was blood everywhere !
+    conversation: {fileID: 11400000, guid: fd9b792b31ed6bf4eb23af0d954d23e5, type: 2}
+  - choiceText: So. Many. Traps.
+    conversation: {fileID: 11400000, guid: 46dfe154d4c8b4341bf2b53a8f283ca0, type: 2}

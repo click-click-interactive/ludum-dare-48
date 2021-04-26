@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 5.7_InnerOpen
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 0}
-  speakerRight: {fileID: 0}
-  lines: []
+  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
+  lines:
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: The gates violently open as you were talking.
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: 'You see what you always see and rush to it. '
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: 'You realize that you were actually running towards the door. '
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
+    text: This is bad, you traverse the portal...
   question: {fileID: 0}
-  nextConversation: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: 239a9a4f2a0b08745b035862439981b5, type: 2}

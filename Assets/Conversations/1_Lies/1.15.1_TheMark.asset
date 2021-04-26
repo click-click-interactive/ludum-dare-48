@@ -17,5 +17,5 @@ MonoBehaviour:
   lines:
   - character: {fileID: 11400000, guid: 8f5c9c332b8fb454da6fe49e6cc30c26, type: 2}
     text: Why ?
-  question: {fileID: 0}
+  question: {fileID: 11400000, guid: 751b2272628666443b080f94f92cd3bf, type: 2}
   nextConversation: {fileID: 0}
