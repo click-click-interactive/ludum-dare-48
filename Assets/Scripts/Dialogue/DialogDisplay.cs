@@ -12,18 +12,19 @@ public class DialogDisplay : MonoBehaviour
     public Conversation conversation;
     public QuestionEvent questionEvent;
     public GameObject speaker;
-    public BoolVariable playerCanControl;
+    //public BoolVariable playerCanControl;
     private SpeakerUI speakerUI;
     public GameObject gameManager;
 
-    private bool conversationStarted = false;
+    public bool conversationStarted;
     private string startedConversationName = "";
 
     private int activeLineIndex = 0;
 
     public void LaunchConversation(Conversation convo)
     {
-        playerCanControl.RuntimeValue = false;
+        //Debug.Log("launch convo : " + convo.name);
+        //playerCanControl.RuntimeValue = false;
         this.conversation = convo;
         this.startedConversationName = convo.name;
         advanceLine();
@@ -44,13 +45,16 @@ public class DialogDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if(conversationStarted)
         {
-            advanceLine();
-        }
-        else if (Input.GetKeyDown("x"))
-        {
-            endConversation();
+            if (Input.GetKeyDown("space"))
+            {
+                advanceLine();
+            }
+            else if (Input.GetKeyDown("x"))
+            {
+                endConversation();
+            }
         }
     }
 
@@ -58,19 +62,17 @@ public class DialogDisplay : MonoBehaviour
     {
         if(conversation.question != null)
         {
-            Debug.Log("Invoke question");
             speakerUI.dialog.text = "";
             questionEvent.Invoke(conversation.question);
         }
         else if (conversation.nextConversation != null)
         {
-            Debug.Log("Next convo");
             ChangeConversation(conversation.nextConversation);
         } else
         {
             endConversation();
-            gameManager.GetComponent<GameManager>().SendMessage("conversationEnded", startedConversationName);
-            startedConversationName = "";
+            gameManager.GetComponent<GameManager>().SendMessage("conversationEnded", this.startedConversationName);
+            
         }
     }
 
@@ -79,7 +81,7 @@ public class DialogDisplay : MonoBehaviour
         conversation = null;
         conversationStarted = false;
         speakerUI.Hide();
-        playerCanControl.RuntimeValue = true;
+        //playerCanControl.RuntimeValue = true;
     }
 
     void initialize()

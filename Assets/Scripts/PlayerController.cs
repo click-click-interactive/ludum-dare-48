@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetInteger("direction", (int) PlayerDirection.None);
             }
 
-            if(Input.GetKeyDown(KeyCode.Space) && triggerEnemy != null)
+            if(Input.GetKeyDown(KeyCode.F) && triggerEnemy != null)
             {
                 triggerEnemy.SendMessage("receiveHit", damage);
             }

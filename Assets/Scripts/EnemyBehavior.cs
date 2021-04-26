@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
@@ -23,12 +24,14 @@ public class EnemyBehavior : MonoBehaviour
     private string previousOrientation;
 
     private Vector3 target;
+    public BoolVariable canMove;
 
-    private bool canMove;
+    public GameManager gameManager;
+    
 
     public void setCanMove(bool value)
     {
-        this.canMove = value;
+        this.canMove.RuntimeValue = value;
     }
 
     // Start is called before the first frame update
@@ -45,9 +48,8 @@ public class EnemyBehavior : MonoBehaviour
     void Update()
     {
         
-        if(canMove)
+        if(canMove.RuntimeValue)
         {
-            Debug.Log(canMove);
             target = GameObject.FindGameObjectWithTag("Player").transform.position;
             if (target != null)
             {
@@ -98,11 +100,8 @@ public class EnemyBehavior : MonoBehaviour
                     }
                 }
             }
-        }
-        
+        }   
     }
-
-
 
     private string getOrientation(Vector3 direction)
     {
@@ -140,6 +139,11 @@ public class EnemyBehavior : MonoBehaviour
         health -= amount;
         if(health <= 0)
         {
+            Debug.Log(this.name.Replace("(Clone)", ""));
+            if (this.name.Replace("(Clone)", "") == "Hero")
+            {
+                gameManager.SendMessage("gameplayEventEnded", "kill_hero");
+            }
             Destroy(gameObject);
         }
         renderer.material.color = damageColor;
@@ -151,9 +155,5 @@ public class EnemyBehavior : MonoBehaviour
         renderer.material.color = originalColor;
     }
 
-    public void toggleMove(bool value)
-    {
-        Debug.Log("toggleMove - Received Message : " + value);
-        this.canMove = value;
-    }
+    
 }
