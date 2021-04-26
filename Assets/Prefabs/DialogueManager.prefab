@@ -67,6 +67,7 @@ MonoBehaviour:
         m_CallState: 2
   speaker: {fileID: 3635780410737381158}
   playerCanControl: {fileID: 11400000, guid: 53831a1da42402b439719ef75fb9a55b, type: 2}
+  gameManager: {fileID: 0}
 --- !u!1001 &1735489444
 PrefabInstance:
   m_ObjectHideFlags: 0

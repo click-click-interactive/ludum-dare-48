@@ -62,6 +62,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            triggerEnemy = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(triggerEnemy != null & collision.gameObject.tag == "Enemy")
+        {
+            triggerEnemy = null;
+        }
+    }
+
     public void receiveHit(int amount)
     {
         health -= amount;
@@ -71,7 +87,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("GAME OVER !");
         }
         renderer.material.color = damageColor;
-        Invoke("RestoreMaterial", 0.0f);
+        Invoke("RestoreMaterial", 0.05f);
     }
 
     private void RestoreMaterial()

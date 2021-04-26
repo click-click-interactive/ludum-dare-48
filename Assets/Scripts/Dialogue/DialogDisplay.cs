@@ -14,8 +14,10 @@ public class DialogDisplay : MonoBehaviour
     public GameObject speaker;
     public BoolVariable playerCanControl;
     private SpeakerUI speakerUI;
+    public GameObject gameManager;
 
     private bool conversationStarted = false;
+    private string startedConversationName = "";
 
     private int activeLineIndex = 0;
 
@@ -23,6 +25,7 @@ public class DialogDisplay : MonoBehaviour
     {
         playerCanControl.RuntimeValue = false;
         this.conversation = convo;
+        this.startedConversationName = convo.name;
         advanceLine();
     }
 
@@ -44,7 +47,8 @@ public class DialogDisplay : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             advanceLine();
-        } else if (Input.GetKeyDown("x"))
+        }
+        else if (Input.GetKeyDown("x"))
         {
             endConversation();
         }
@@ -65,6 +69,8 @@ public class DialogDisplay : MonoBehaviour
         } else
         {
             endConversation();
+            gameManager.GetComponent<GameManager>().SendMessage("conversationEnded", startedConversationName);
+            startedConversationName = "";
         }
     }
 
