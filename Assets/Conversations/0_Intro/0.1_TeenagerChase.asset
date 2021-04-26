@@ -24,4 +24,4 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
     text: Run boy, run ! Ahahaha !
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: ecbd7901f6abdda409c2ded80d29abf2, type: 2}
+  nextConversation: {fileID: 0}

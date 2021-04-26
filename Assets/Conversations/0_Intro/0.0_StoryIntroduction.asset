@@ -26,4 +26,4 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: "Somewhere in a small village in the country\u2026"
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: 70ecfdea45577e54f8998e13196e5537, type: 2}
+  nextConversation: {fileID: 0}
