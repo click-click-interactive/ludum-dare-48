@@ -104,7 +104,9 @@ MonoBehaviour:
   health: 5
   damage: 3
   damageColor: {r: 0, g: 0, b: 0, a: 0}
+  gameManager: {fileID: 0}
   canControl: {fileID: 11400000, guid: 53831a1da42402b439719ef75fb9a55b, type: 2}
+  conversationTrapScare: {fileID: 11400000, guid: fe0268ed40669c1499500804ff1edb7a, type: 2}
 --- !u!58 &1735927112231824960
 CircleCollider2D:
   m_ObjectHideFlags: 0

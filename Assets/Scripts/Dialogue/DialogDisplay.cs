@@ -67,6 +67,9 @@ public class DialogDisplay : MonoBehaviour
         }
         else if (conversation.nextConversation != null)
         {
+            Debug.Log("changing converstation");
+            Debug.Log("from : " + conversation.name);
+            Debug.Log("to: " + conversation.nextConversation.name);
             ChangeConversation(conversation.nextConversation);
         } else
         {

@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Shovel
   - Pelle
+  - Enemy
+  - WinCircle
+  - ExitTrigger
+  - TrapScareTrigger
+  - MagicDoor
+  - TrapRoomExitTrigger
+  - demonking
   layers:
   - Default
   - TransparentFX

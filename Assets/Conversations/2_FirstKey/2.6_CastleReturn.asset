@@ -25,4 +25,4 @@ MonoBehaviour:
     text: " Maybe on the next trip. You take rest, for just a night, before embarking
       on your next journey.\r"
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: 5b32c788e852dcf419d5cff6b57b0fb6, type: 2}
+  nextConversation: {fileID: 0}

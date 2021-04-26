@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 1.7.2_InvitetoCastle
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
-  speakerRight: {fileID: 11400000, guid: 412d69cfffae81e4abef74eae5ec8f7c, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 412d69cfffae81e4abef74eae5ec8f7c, type: 2}
     text: "We are aware, this is why you must come, don\u2019t you know ?"
   - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
     text: Yes ! Of course ! Let us go, brave companions !
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: d2298d8f434cccf40859c19ece84192a, type: 2}
+  nextConversation: {fileID: 0}

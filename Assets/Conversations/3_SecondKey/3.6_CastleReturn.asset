@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 3.6_CastleReturn
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
-  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: "Back at the castle, you tell the tales of your combat, much to the court\u2019s
@@ -31,4 +29,4 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: You take rest, for just a night, before embarking on your next journey.
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: 61788ed95036f884ca05a27509815204, type: 2}
+  nextConversation: {fileID: 0}

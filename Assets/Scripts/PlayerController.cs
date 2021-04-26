@@ -15,14 +15,22 @@ public class PlayerController : MonoBehaviour
     public Color damageColor;
     private Color originalColor;
 
-    public BoolVariable canControl;
+    public GameManager gameManager;
 
+    public BoolVariable canControl;
+    private bool winCirclePressed = false;
+    private bool roomOneExited = false;
+    private bool magicalDoorTaken = false;
+    private bool trapRoomExited = false;
+
+    public Conversation conversationTrapScare;
     // Start is called before the first frame update
     void Start()
     {
         renderer = this.gameObject.GetComponent<SpriteRenderer>();
         originalColor = renderer.material.color;
         animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -64,9 +72,43 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        //Debug.Log("coll  " + collision);
+        if (collision.gameObject.tag == "Enemy")
         {
             triggerEnemy = collision.gameObject;
+        }
+
+        if(collision.gameObject.tag == "WinCircle" && !winCirclePressed)
+        {
+            Debug.Log("winCircleCollision ! ");
+            gameManager.SendMessage("gameplayEventEnded", "win_circle_stepped");
+            winCirclePressed = true;
+        }
+        if(collision.gameObject.tag == "ExitTrigger" && !roomOneExited)
+        {
+            Debug.Log("ExitTrigger ! ");
+            gameManager.SendMessage("gameplayEventEnded", "room_1_exit");
+            roomOneExited = true;
+        }
+        if(collision.gameObject.tag == "MagicDoor" && !magicalDoorTaken)
+        {
+            Debug.Log("MagicDoor ! ");
+            gameManager.SendMessage("gameplayEventEnded", "magic_door_enter");
+            magicalDoorTaken = true;
+        }
+        if(collision.gameObject.tag == "TrapScareTrigger")
+        {
+            gameManager.startConversation(conversationTrapScare);
+        }
+        if(collision.gameObject.tag == "TrapRoomExitTrigger" && !trapRoomExited)
+        {
+            gameManager.SendMessage("gameplayEventEnded", "trap_room_exit");
+            trapRoomExited = true;
+        }
+        if(collision.gameObject.tag == "demonking")
+        {
+            gameManager.SendMessage("gameplayEventEnded", "demon_king");
+            
         }
     }
 

@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 0.3_HeroIntroduction
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
-  speakerRight: {fileID: 11400000, guid: 3f190bcf5a136ac47bf32102755f9634, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 3f190bcf5a136ac47bf32102755f9634, type: 2}
     text: Fear not ! I will slay the beast !
   - character: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
     text: HEEEEEEEEEEEEEEEEELP !
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: e7b5df2c77aa5004ba3b0aa8dc6eb3ab, type: 2}
+  nextConversation: {fileID: 0}
