@@ -8,17 +8,14 @@ public class PlayerController : MonoBehaviour
     public float speed = 3.0f;
     public int health = 5;
     public int damage = 3;
-    public GameObject hintPrefab;
-    public Canvas canvas;
-    private GameObject hintInstance;
-    private GameObject triggerInstance;
     private GameObject triggerEnemy;
-    private CallableAction actionTarget;
     private Animator animator;
 
     private Renderer renderer;
     public Color damageColor;
     private Color originalColor;
+
+    public BoolVariable canControl;
 
     // Start is called before the first frame update
     void Start()
@@ -33,73 +30,34 @@ public class PlayerController : MonoBehaviour
     {
         bool moved = false;
 
-        if (Input.GetKey(KeyCode.Z)) {
-            transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up, speed * Time.deltaTime);
-            moved = true;
-            animator.SetInteger("direction", (int) PlayerDirection.Up);
-        } else if (Input.GetKey(KeyCode.S)) {
-            transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.down, speed * Time.deltaTime);
-            moved = true;
-            animator.SetInteger("direction", (int) PlayerDirection.Down);
-        }
-
-        if (Input.GetKey(KeyCode.Q)) {
-            transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.left, speed * Time.deltaTime);
-            moved = true;
-            animator.SetInteger("direction", (int) PlayerDirection.Left);
-        } else if (Input.GetKey(KeyCode.D)) {
-            transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right, speed * Time.deltaTime);
-            moved = true;
-            animator.SetInteger("direction", (int) PlayerDirection.Right);
-        }
-
-        if (!moved) {
-            animator.SetInteger("direction", (int) PlayerDirection.None);
-        }
-
-        if (actionTarget != null && Input.GetKeyDown(KeyCode.F) && triggerInstance != null)
-        {
-            triggerInstance.SendMessage("StartConversation");
-            actionTarget.call();
-        }
-
-        if(Input.GetKeyDown(KeyCode.Space) && triggerEnemy != null)
-        {
-            triggerEnemy.SendMessage("receiveHit", damage);
-        } 
-    }
-
-    void OnTriggerEnter2D(Collider2D other) {
-
-        ActionTrigger actionTrigger = other.GetComponent<ActionTrigger>();
-        if (actionTrigger && actionTrigger.action) {
-            this.actionTarget = actionTrigger.action;
-            this.triggerInstance = other.gameObject;
-            hintPrefab.GetComponentInChildren<TMP_Text>().text = this.actionTarget.getType();
-            hintInstance = Instantiate(
-                hintPrefab,
-                other.gameObject.transform.position + (Vector3.right * 3),
-                canvas.gameObject.transform.rotation,
-                canvas.gameObject.transform
-            );
-        }
-
-        if(other.gameObject.tag == "Enemy")
-        {
-            triggerEnemy = other.gameObject;
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        ActionTrigger actionTrigger = other.GetComponent<ActionTrigger>();
-        if (actionTrigger) {
-            if(this.triggerInstance == other.gameObject)
-            {
-                this.triggerInstance = null;
+        if (canControl.RuntimeValue == true) {
+            if (Input.GetKey(KeyCode.Z)) {
+                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up, speed * Time.deltaTime);
+                moved = true;
+                animator.SetInteger("direction", (int) PlayerDirection.Up);
+            } else if (Input.GetKey(KeyCode.S)) {
+                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.down, speed * Time.deltaTime);
+                moved = true;
+                animator.SetInteger("direction", (int) PlayerDirection.Down);
             }
-            if (this.hintInstance) {
-                Destroy(hintInstance);
+
+            if (Input.GetKey(KeyCode.Q)) {
+                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.left, speed * Time.deltaTime);
+                moved = true;
+                animator.SetInteger("direction", (int) PlayerDirection.Left);
+            } else if (Input.GetKey(KeyCode.D)) {
+                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right, speed * Time.deltaTime);
+                moved = true;
+                animator.SetInteger("direction", (int) PlayerDirection.Right);
+            }
+
+            if (!moved) {
+                animator.SetInteger("direction", (int) PlayerDirection.None);
+            }
+
+            if(Input.GetKeyDown(KeyCode.Space) && triggerEnemy != null)
+            {
+                triggerEnemy.SendMessage("receiveHit", damage);
             }
         }
     }

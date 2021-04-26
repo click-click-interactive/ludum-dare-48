@@ -12,18 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 0.8_InnerHeroDeath
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
-  speakerRight: {fileID: 11400000, guid: 1d936712d03cba34a90adc9fc4b489a6, type: 2}
   lines:
   - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: 'The hero strikes the beast one last time. It falls dead, crushing him. '
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: "You wait for a bit, grab the hero\u2019s pack and run\u2026 \r"
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: 'While emerging from the forest, you spot an army patrol running your way. '
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: "You fear they are coming for you, you run back\u2026 "
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 8f12b587c48e36f4b8cbe6231c3d1b6c, type: 2}
     text: The hero is not dead, he managed to extract himself from under the beast
       and went looking for his pack.
   question: {fileID: 0}

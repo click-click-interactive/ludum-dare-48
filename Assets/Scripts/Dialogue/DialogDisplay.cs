@@ -1,22 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 [System.Serializable]
-
 public class QuestionEvent : UnityEvent<Question> { }
 
 public class DialogDisplay : MonoBehaviour
 {
     public Conversation conversation;
     public QuestionEvent questionEvent;
-    public GameObject speakerLeft;
-    public GameObject speakerRight;
-    
-    private SpeakerUI speakerUILeft;
-    private SpeakerUI speakerUIRight;
-    public GameObject gameManager;
+    public GameObject speaker;
+    public BoolVariable playerCanControl;
+    private SpeakerUI speakerUI;
+
     private bool conversationStarted = false;
     private string startedConversationName = "";
 
@@ -24,7 +22,7 @@ public class DialogDisplay : MonoBehaviour
 
     public void LaunchConversation(Conversation convo)
     {
-        
+        playerCanControl.RuntimeValue = false;
         this.conversation = convo;
         this.startedConversationName = convo.name;
         advanceLine();
@@ -39,8 +37,7 @@ public class DialogDisplay : MonoBehaviour
     
     void Start()
     {
-        speakerUILeft = speakerLeft.GetComponent<SpeakerUI>();
-        speakerUIRight = speakerRight.GetComponent<SpeakerUI>();
+        speakerUI = speaker.GetComponent<SpeakerUI>();
     }
 
     // Update is called once per frame
@@ -60,8 +57,7 @@ public class DialogDisplay : MonoBehaviour
         if(conversation.question != null)
         {
             Debug.Log("Invoke question");
-            speakerUILeft.dialog.text = "";
-            speakerUIRight.dialog.text = "";
+            speakerUI.dialog.text = "";
             questionEvent.Invoke(conversation.question);
         }
         else if (conversation.nextConversation != null)
@@ -80,17 +76,15 @@ public class DialogDisplay : MonoBehaviour
     {
         conversation = null;
         conversationStarted = false;
-        speakerUILeft.Hide();
-        speakerUIRight.Hide();
+        speakerUI.Hide();
+        playerCanControl.RuntimeValue = true;
     }
 
     void initialize()
     {
         conversationStarted = true;
         activeLineIndex = 0;
-        speakerUILeft.Speaker = conversation.speakerLeft;
-        speakerUIRight.Speaker = conversation.speakerRight;
-
+        speakerUI.Show();
     }
 
     private void advanceLine()
@@ -117,21 +111,23 @@ public class DialogDisplay : MonoBehaviour
         Line line = conversation.lines[activeLineIndex];
         Character character = line.character;
 
-        if(speakerUILeft.IsEqualsTo(character))
+        SetDialogContent(speakerUI, line);
+
+        if (activeLineIndex < conversation.lines.Length - 1 && (conversation.question != null || conversation.nextConversation != null))
         {
-            SetDialog(speakerUILeft, speakerUIRight, line.text);
-        } else
-        {
-            SetDialog(speakerUIRight, speakerUILeft, line.text);
+            speakerUI.hint.SetActive(true);
+        }
+        else {
+            speakerUI.hint.SetActive(false);
         }
 
         activeLineIndex++;
     }
 
-    void SetDialog(SpeakerUI showSpeaker, SpeakerUI hideSpeaker, string text)
+    void SetDialogContent(SpeakerUI showSpeaker, Line line)
     {
-        showSpeaker.Dialog = text;
-        showSpeaker.Show();
-        hideSpeaker.Hide();
+        showSpeaker.Dialog = line.text;
+        showSpeaker.fullName.text = line.character.fullName;
+        showSpeaker.portrait.sprite = line.character.portrait;
     }
 }

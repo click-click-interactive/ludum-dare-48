@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325027898b9d9e842bf7f2d4854be7e7, type: 3}
   m_Name: 0.2_BeastIntroduction
   m_EditorClassIdentifier: 
-  speakerLeft: {fileID: 11400000, guid: 8f6479fea32e7564fb80ed134267da84, type: 2}
-  speakerRight: {fileID: 11400000, guid: c47fc7a5e5c0aa040a3df5ef03b09fc7, type: 2}
   lines:
   - character: {fileID: 11400000, guid: c47fc7a5e5c0aa040a3df5ef03b09fc7, type: 2}
     text: '*Growling*'
@@ -28,4 +26,4 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 3f190bcf5a136ac47bf32102755f9634, type: 2}
     text: HEEEEEEEEEEEEEEEEELP !
   question: {fileID: 0}
-  nextConversation: {fileID: 11400000, guid: 39471496a433cc140a5e9e141a2f8995, type: 2}
+  nextConversation: {fileID: 11400000, guid: bece25469e7e06d4f8b5282ab41b5f87, type: 2}
