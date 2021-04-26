@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemy;
     public GameObject dialogueManager;
     public Conversation conversationIntroduction;
+    public Canvas canvas;
     private string currentConversation;
     private bool canContinue;
 
@@ -25,13 +26,14 @@ public class GameManager : MonoBehaviour
             Debug.Log(conversationIntroduction);
             canContinue = false;
             player.transform.position = new Vector3(0.8f, 0.5f, 0);
+            player.GetComponentInChildren<ActionListener>().canvas = canvas;
             Instantiate(player);
             //dialogueManager.GetComponent<DialogDisplay>().LaunchConversation(conversationIntroduction);
 
-            enemy.transform.position = new Vector3(3.5f, 0.6f, 0);
+            /*enemy.transform.position = new Vector3(3.5f, 0.6f, 0);
             Instantiate(enemy);
             enemyBehavior = enemy.GetComponent<EnemyBehavior>();
-            enemyBehavior.setCanMove(false);
+            enemyBehavior.setCanMove(false);*/
 
             currentConversation = conversationIntroduction.name;
             state = "wait";

@@ -62,6 +62,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            triggerEnemy = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(triggerEnemy != null & collision.gameObject.tag == "Enemy")
+        {
+            triggerEnemy = null;
+        }
+    }
+
     public void receiveHit(int amount)
     {
         health -= amount;

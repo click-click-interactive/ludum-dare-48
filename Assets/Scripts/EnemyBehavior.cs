@@ -18,7 +18,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public float speed = 1.0f;
     public float proximityThreshold = 1.0f;
-    public Animator animator;
+    private Animator animator;
     private string orientation;
     private string previousOrientation;
 

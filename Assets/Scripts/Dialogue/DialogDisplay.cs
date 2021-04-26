@@ -14,6 +14,7 @@ public class DialogDisplay : MonoBehaviour
     public GameObject speaker;
     public BoolVariable playerCanControl;
     private SpeakerUI speakerUI;
+    public GameObject gameManager;
 
     private bool conversationStarted = false;
     private string startedConversationName = "";
@@ -43,13 +44,14 @@ public class DialogDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space"))
         {
             advanceLine();
-        } else if (Input.GetKeyDown("x"))
+        }
+        else if (Input.GetKeyDown("x"))
         {
             endConversation();
-        }*/
+        }
     }
 
     void advanceConversation()
