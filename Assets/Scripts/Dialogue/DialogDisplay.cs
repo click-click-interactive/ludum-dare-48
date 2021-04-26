@@ -119,14 +119,7 @@ public class DialogDisplay : MonoBehaviour
         Character character = line.character;
 
         SetDialogContent(speakerUI, line);
-
-        if (activeLineIndex < conversation.lines.Length - 1 && (conversation.question != null || conversation.nextConversation != null))
-        {
-            speakerUI.hint.SetActive(true);
-        }
-        else {
-            speakerUI.hint.SetActive(false);
-        }
+        speakerUI.hint.SetActive(true);
 
         activeLineIndex++;
     }

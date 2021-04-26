@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public Conversation conversationMagicDoorExit;
     public Conversation conversationBattleOutro2;
     public Conversation finalInnerTravel;
+    public Conversation finalCastleReturn;
     public Conversation innerOpen;
     public Conversation demonKing;
     public Conversation lastWords;
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         conversationInProgress = false;
-        player.transform.position = new Vector3(-3.6f, 0.1f, 0);
+        player.transform.position = new Vector3(47f, 2.5f, -1);
         player.GetComponent<PlayerController>().gameManager = this;
         player.GetComponentInChildren<ActionListener>().canvas = canvas;
         player = Instantiate(player);
@@ -147,11 +148,14 @@ public class GameManager : MonoBehaviour
             case "3.4_BattleOutro":
                 progressState(16);
                 break;
-            case "5.0_InnerTravel":
+            case "4.6_CastleReturn":
                 progressState(17);
                 break;
-            case "5.7_InnerOpen":
+            case "5.0_InnerTravel":
                 progressState(18);
+                break;
+            case "5.7_InnerOpen":
+                progressState(19);
                 break;
 
         }
@@ -178,7 +182,7 @@ public class GameManager : MonoBehaviour
                 progressState(15);
                 break;
             case "demon_king":
-                progressState(19);
+                progressState(20);
                 break;
         }
     }
@@ -193,15 +197,17 @@ public class GameManager : MonoBehaviour
 
         if (step == 2)
         {
-            startConversation(conversationTeenagerChase);    
-            
+            mainCamera.transform.position = new Vector3(24f, 1f, mainCamera.transform.position.z);
+            startConversation(conversationTeenagerChase);
         }
         if(step == 3)
         {
+            
             startConversation(conversationInnerTheft);
         }
         if (step == 4)
         {
+            mainCamera.transform.position = new Vector3(47.5f, 1f, mainCamera.transform.position.z);
             hero.transform.position = new Vector3(1.2f, 3.3f, 0);
             hero.GetComponent<EnemyBehavior>().gameManager = this;
             hero = Instantiate(hero);
@@ -215,13 +221,17 @@ public class GameManager : MonoBehaviour
 
         if(step == 6)
         {
+            // arrive salle premier boss
+            mainCamera.transform.position = new Vector3(0f, -15f, mainCamera.transform.position.z);
             startConversation(conversationInnerArrive);
         }
         if(step == 7)
         {
             waitState();
-            player.transform.position = new Vector3(60.0f, 0f, player.transform.position.z);
-            mainCamera.transform.position = new Vector3(60.0f, 0f, mainCamera.transform.position.z);
+            //player.transform.position = new Vector3(60.0f, 0f, player.transform.position.z);
+            //mainCamera.transform.position = new Vector3(60.0f, 0f, mainCamera.transform.position.z);
+            mainCamera.transform.position = new Vector3(24f, -15f, mainCamera.transform.position.z);
+            player.transform.position = new Vector3(23.0f, -17f, player.transform.position.z);
 
             foreach (GameObject e in enemiesRoom1)
             {
@@ -242,26 +252,29 @@ public class GameManager : MonoBehaviour
                 e.GetComponent<Animator>().enabled = false;
             }
             startConversation(conversationBattleOneWin);
+            
         }
         if (step == 9)
         {
-            exitRoom1.SetActive(true);
-
+            //exitRoom1.SetActive(true);
+            startConversation(conversationBattleOutro);
         }
 
         if (step == 10)
         {
+            mainCamera.transform.position = new Vector3(47.5f, -15f, mainCamera.transform.position.z);
             startConversation(conversationCastleReturn);
         }
         if(step == 11)
         {
+            mainCamera.transform.position = new Vector3(0f, -30f, mainCamera.transform.position.z);
             startConversation(conversationInnerArrive2);
         }
         if(step == 12)
         {
             waitState();
-            player.transform.position = new Vector3(90.55f, 1.5f, player.transform.position.z);
-            mainCamera.transform.position = new Vector3(98f, 0f, mainCamera.transform.position.z);
+            player.transform.position = new Vector3(24f, -37f, player.transform.position.z);
+            mainCamera.transform.position = new Vector3(24, -32f, mainCamera.transform.position.z);
 
             // arrive dans la seconde salle
             runState();
@@ -273,7 +286,7 @@ public class GameManager : MonoBehaviour
         if(step== 14)
         {
             waitState();
-            player.transform.position = new Vector3(103f, 3.0f, player.transform.position.z);
+            player.transform.position = new Vector3(22.3f, -28.6f, player.transform.position.z);
             startConversation(conversationMagicDoorExit);
             runState();
         }
@@ -282,25 +295,33 @@ public class GameManager : MonoBehaviour
         {
             startConversation(conversationBattleOutro2);
         }
+
         if(step == 16)
         {
-            startConversation(finalInnerTravel);
+            mainCamera.transform.position = new Vector3(47.5f, -30f, mainCamera.transform.position.z);
+            startConversation(finalCastleReturn);
         }
-        if (step == 17)
+        if(step == 17)
         {
-            startConversation(innerOpen);
+            mainCamera.transform.position = new Vector3(0f, -64.1f, mainCamera.transform.position.z);
+            startConversation(finalInnerTravel);
         }
         if (step == 18)
         {
-            Debug.Log("Spawn DemonKing and die !");
+            startConversation(innerOpen);
+        }
+        if (step == 19)
+        {
+
+            //Debug.Log("Spawn DemonKing and die !");
             waitState();
-            mainCamera.transform.position = new Vector3(120f, 0f, mainCamera.transform.position.z);
-            player.transform.position = new Vector3(120f, -1.7f, player.transform.position.z);
+            mainCamera.transform.position = new Vector3(24f, -64.1f, mainCamera.transform.position.z);
+            player.transform.position = new Vector3(24.4f, -65f, player.transform.position.z);
             startConversation(demonKing);
             runState();
             
         }
-        if(step == 19)
+        if(step == 20)
         {
             player.GetComponent<PlayerController>().speed = 0.0f;
             player.transform.eulerAngles = new Vector3(
