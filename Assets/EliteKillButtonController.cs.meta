@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 8168d997f9a53454a9245607f4580b05
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hasTriggerEliteKillButton: {fileID: 11400000, guid: 6ffda7fead7dc89428337a4b987a7e5b, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
