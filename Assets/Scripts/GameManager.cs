@@ -49,7 +49,6 @@ public class GameManager : MonoBehaviour
         player = Instantiate(player);
 
 
-        conversationInProgress = false;
         //step = 1;
 
         waitState();
@@ -192,6 +191,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Step " + step);
         if (step == 1)
         {
+            //mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y, mainCamera.transform.position.z);
             startConversation(conversationIntroduction);
         }
 

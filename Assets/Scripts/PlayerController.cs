@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private GameObject triggerEnemy;
     private Animator animator;
 
-    private Renderer renderer;
+    private Renderer _renderer;
     public Color damageColor;
     private Color originalColor;
 
@@ -27,8 +27,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        renderer = this.gameObject.GetComponent<SpriteRenderer>();
-        originalColor = renderer.material.color;
+        _renderer = this.gameObject.GetComponent<SpriteRenderer>();
+        originalColor = _renderer.material.color;
         animator = GetComponent<Animator>();
         
     }
@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         bool moved = false;
 
         if (canControl.RuntimeValue == true) {
-            if (Input.GetKey(KeyCode.Z)) {
+            if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.W)) {
                 transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up, speed * Time.deltaTime);
                 moved = true;
                 animator.SetInteger("direction", (int) PlayerDirection.Up);
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetInteger("direction", (int) PlayerDirection.Down);
             }
 
-            if (Input.GetKey(KeyCode.Q)) {
+            if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.A)) {
                 transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.left, speed * Time.deltaTime);
                 moved = true;
                 animator.SetInteger("direction", (int) PlayerDirection.Left);
@@ -128,12 +128,12 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("GAME OVER !");
         }
-        renderer.material.color = damageColor;
+        _renderer.material.color = damageColor;
         Invoke("RestoreMaterial", 0.05f);
     }
 
     private void RestoreMaterial()
     {
-        renderer.material.color = originalColor;
+        _renderer.material.color = originalColor;
     }
 }
